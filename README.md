@@ -1,3 +1,7 @@
+
+![Screenshot of the app](breakout.png)
+
+
 # RL Training with Custom and Atari Environments
 
 ## Setup Instructions
@@ -75,3 +79,16 @@ Key Metrics in the Log:
 # Model training stats, latest on top:
 
 # Breakout-v4:
+
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 403      |
+|    ep_rew_mean     | 4.73     |
+| time/              |          |
+|    fps             | 16       |
+|    iterations      | 1        |
+|    time_elapsed    | 122      |
+|    total_timesteps | 206848   |
+---------------------------------
+
+Model saved as ppo_Breakout-v4.zip
