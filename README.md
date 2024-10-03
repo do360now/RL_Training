@@ -66,6 +66,12 @@ Key Metrics in the Log:
 |    value_loss           | 0.0149     |
 ----------------------------------------
 
+# Repo information:
+
+
+`git remote add origin https://github.com/do360now/RL_Training.git`
+
+
 # Model training stats, latest on top:
 
 # Breakout-v4:
