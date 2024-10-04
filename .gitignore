@@ -5,4 +5,9 @@ __pycache__/
 
 # Ignore all .zip files
 *.zip
+*.bak
+
+# Ignore all .log files
+*.log
+logs/*.log
 
