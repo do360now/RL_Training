@@ -1,0 +1,4 @@
+A.L.E: Arcade Learning Environment (version 0.8.1+53f58b7)
+[Powered by Stella]
+/home/flynn/DevOps/projects/RL_Training/.venv/lib/python3.10/site-packages/ale_py/roms/__init__.py:118: DeprecationWarning: Automatic importing of atari-py roms won't be supported in future releases of ale-py. Please migrate over to using `ale-import-roms` OR an ALE-supported ROM package. To make this warning disappear you can run `ale-import-roms --import-from-pkg atari_py.atari_roms`. For more information see: https://github.com/mgbellemare/Arcade-Learning-Environment#rom-management
+  path = _resolve_rom(name)

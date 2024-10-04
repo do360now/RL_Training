@@ -1,0 +1,97 @@
+A.L.E: Arcade Learning Environment (version 0.8.1+53f58b7)
+[Powered by Stella]
+/home/flynn/DevOps/projects/RL_Training/.venv/lib/python3.10/site-packages/ale_py/roms/__init__.py:118: DeprecationWarning: Automatic importing of atari-py roms won't be supported in future releases of ale-py. Please migrate over to using `ale-import-roms` OR an ALE-supported ROM package. To make this warning disappear you can run `ale-import-roms --import-from-pkg atari_py.atari_roms`. For more information see: https://github.com/mgbellemare/Arcade-Learning-Environment#rom-management
+  path = _resolve_rom(name)
+Creating new model ppo_Breakout-v4
+Using cuda device
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 282      |
+|    ep_rew_mean     | 2        |
+| time/              |          |
+|    fps             | 223      |
+|    iterations      | 1        |
+|    time_elapsed    | 36       |
+|    total_timesteps | 8192     |
+---------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 260          |
+|    ep_rew_mean          | 1.6          |
+| time/                   |              |
+|    fps                  | 114          |
+|    iterations           | 2            |
+|    time_elapsed         | 142          |
+|    total_timesteps      | 16384        |
+| train/                  |              |
+|    approx_kl            | 0.0016096683 |
+|    clip_fraction        | 0.0131       |
+|    clip_range           | 0.1          |
+|    entropy_loss         | -1.39        |
+|    explained_variance   | -0.2623397   |
+|    learning_rate        | 1e-05        |
+|    loss                 | -0.279       |
+|    n_updates            | 10           |
+|    policy_gradient_loss | -0.00427     |
+|    value_loss           | 0.147        |
+------------------------------------------
+A.L.E: Arcade Learning Environment (version 0.8.1+53f58b7)
+[Powered by Stella]
+/home/flynn/DevOps/projects/RL_Training/.venv/lib/python3.10/site-packages/ale_py/roms/__init__.py:118: DeprecationWarning: Automatic importing of atari-py roms won't be supported in future releases of ale-py. Please migrate over to using `ale-import-roms` OR an ALE-supported ROM package. To make this warning disappear you can run `ale-import-roms --import-from-pkg atari_py.atari_roms`. For more information see: https://github.com/mgbellemare/Arcade-Learning-Environment#rom-management
+  path = _resolve_rom(name)
+Creating new model ppo_Breakout-v4
+Using cuda device
+Traceback (most recent call last):
+  File "/home/flynn/DevOps/projects/RL_Training/train.py", line 95, in <module>
+    train_model(env, model_name="ppo_" + args.env, total_timesteps=args.timesteps, render_game=args.render)
+  File "/home/flynn/DevOps/projects/RL_Training/train.py", line 50, in train_model
+    model = PPO(
+  File "/home/flynn/DevOps/projects/RL_Training/.venv/lib/python3.10/site-packages/stable_baselines3/ppo/ppo.py", line 171, in __init__
+    self._setup_model()
+  File "/home/flynn/DevOps/projects/RL_Training/.venv/lib/python3.10/site-packages/stable_baselines3/ppo/ppo.py", line 174, in _setup_model
+    super()._setup_model()
+  File "/home/flynn/DevOps/projects/RL_Training/.venv/lib/python3.10/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 124, in _setup_model
+    self.rollout_buffer = self.rollout_buffer_class(
+  File "/home/flynn/DevOps/projects/RL_Training/.venv/lib/python3.10/site-packages/stable_baselines3/common/buffers.py", line 388, in __init__
+    self.reset()
+  File "/home/flynn/DevOps/projects/RL_Training/.venv/lib/python3.10/site-packages/stable_baselines3/common/buffers.py", line 391, in reset
+    self.observations = np.zeros((self.buffer_size, self.n_envs, *self.obs_shape), dtype=np.float32)
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 49.2 GiB for an array with shape (8192, 16, 210, 160, 3) and data type float32
+A.L.E: Arcade Learning Environment (version 0.8.1+53f58b7)
+[Powered by Stella]
+/home/flynn/DevOps/projects/RL_Training/.venv/lib/python3.10/site-packages/ale_py/roms/__init__.py:118: DeprecationWarning: Automatic importing of atari-py roms won't be supported in future releases of ale-py. Please migrate over to using `ale-import-roms` OR an ALE-supported ROM package. To make this warning disappear you can run `ale-import-roms --import-from-pkg atari_py.atari_roms`. For more information see: https://github.com/mgbellemare/Arcade-Learning-Environment#rom-management
+  path = _resolve_rom(name)
+Creating new model ppo_Breakout-v4
+Using cuda device
+Traceback (most recent call last):
+  File "/home/flynn/DevOps/projects/RL_Training/train.py", line 95, in <module>
+    train_model(env, model_name="ppo_" + args.env, total_timesteps=args.timesteps, render_game=args.render)
+  File "/home/flynn/DevOps/projects/RL_Training/train.py", line 50, in train_model
+    model = PPO(
+  File "/home/flynn/DevOps/projects/RL_Training/.venv/lib/python3.10/site-packages/stable_baselines3/ppo/ppo.py", line 171, in __init__
+    self._setup_model()
+  File "/home/flynn/DevOps/projects/RL_Training/.venv/lib/python3.10/site-packages/stable_baselines3/ppo/ppo.py", line 174, in _setup_model
+    super()._setup_model()
+  File "/home/flynn/DevOps/projects/RL_Training/.venv/lib/python3.10/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 124, in _setup_model
+    self.rollout_buffer = self.rollout_buffer_class(
+  File "/home/flynn/DevOps/projects/RL_Training/.venv/lib/python3.10/site-packages/stable_baselines3/common/buffers.py", line 388, in __init__
+    self.reset()
+  File "/home/flynn/DevOps/projects/RL_Training/.venv/lib/python3.10/site-packages/stable_baselines3/common/buffers.py", line 391, in reset
+    self.observations = np.zeros((self.buffer_size, self.n_envs, *self.obs_shape), dtype=np.float32)
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 49.2 GiB for an array with shape (8192, 16, 210, 160, 3) and data type float32
+A.L.E: Arcade Learning Environment (version 0.8.1+53f58b7)
+[Powered by Stella]
+/home/flynn/DevOps/projects/RL_Training/.venv/lib/python3.10/site-packages/ale_py/roms/__init__.py:118: DeprecationWarning: Automatic importing of atari-py roms won't be supported in future releases of ale-py. Please migrate over to using `ale-import-roms` OR an ALE-supported ROM package. To make this warning disappear you can run `ale-import-roms --import-from-pkg atari_py.atari_roms`. For more information see: https://github.com/mgbellemare/Arcade-Learning-Environment#rom-management
+  path = _resolve_rom(name)
+Creating new model ppo_Breakout-v4
+Using cuda device
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 248      |
+|    ep_rew_mean     | 1.29     |
+| time/              |          |
+|    fps             | 224      |
+|    iterations      | 1        |
+|    time_elapsed    | 36       |
+|    total_timesteps | 8192     |
+---------------------------------

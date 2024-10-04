@@ -1,0 +1,14 @@
+A.L.E: Arcade Learning Environment (version 0.8.1+53f58b7)
+[Powered by Stella]
+Traceback (most recent call last):
+  File "/home/flynn/DevOps/projects/RL_Training/train.py", line 59, in <module>
+    env = choose_environment(args.env, render_mode=render_mode)
+  File "/home/flynn/DevOps/projects/RL_Training/train.py", line 12, in choose_environment
+    return gym.make(env_name, render_mode=render_mode)
+  File "/home/flynn/DevOps/projects/RL_Training/.venv/lib/python3.10/site-packages/gymnasium/envs/registration.py", line 802, in make
+    env = env_creator(**env_spec_kwargs)
+  File "/home/flynn/DevOps/projects/RL_Training/.venv/lib/python3.10/site-packages/shimmy/atari_env.py", line 171, in __init__
+    self.seed()
+  File "/home/flynn/DevOps/projects/RL_Training/.venv/lib/python3.10/site-packages/shimmy/atari_env.py", line 216, in seed
+    raise Error(
+gymnasium.error.Error: We're Unable to find the game "MsPacman". Note: Gymnasium no longer distributes ROMs. If you own a license to use the necessary ROMs for research purposes you can download them via `pip install gymnasium[accept-rom-license]`. Otherwise, you should try importing "MsPacman" via the command `ale-import-roms`. If you believe this is a mistake perhaps your copy of "MsPacman" is unsupported. To check if this is the case try providing the environment variable `PYTHONWARNINGS=default::ImportWarning:ale_py.roms`. For more information see: https://github.com/mgbellemare/Arcade-Learning-Environment#rom-management
