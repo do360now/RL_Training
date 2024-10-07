@@ -14,3 +14,4 @@ logs/*.log
 logs/*.*
 pong/logs/evaluations.npz
 Breakout-v4/logs/evaluations.npz
+X/.env
