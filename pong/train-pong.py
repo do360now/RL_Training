@@ -97,7 +97,7 @@ def train_model(env, model_name="ppo_model", total_timesteps=10240, checkpoint_i
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train PPO model on a given environment")
     parser.add_argument('--env', type=str, default="Pong-v4", help="Name of the environment (e.g., Pong-v4)")
-    parser.add_argument('--timesteps', type=int, default=10240, help="Total timesteps for training")
+    parser.add_argument('--timesteps', type=int, default=1024000, help="Total timesteps for training")
     parser.add_argument('--render', action='store_true', help="Render the game during training")
     args = parser.parse_args()
 

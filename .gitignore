@@ -10,10 +10,7 @@ __pycache__/
 # Ignore all .log files
 *.log
 logs/*.log
-<<<<<<< HEAD
 
-=======
 logs/*.*
 pong/logs/evaluations.npz
 Breakout-v4/logs/evaluations.npz
->>>>>>> 542fffb (fixing stuff)

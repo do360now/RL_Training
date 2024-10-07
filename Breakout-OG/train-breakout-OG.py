@@ -8,7 +8,7 @@ def choose_environment(env_name, render_mode=None):
     # Set the render mode if specified (e.g., 'human' to display the game)
     return gym.make(env_name, render_mode=render_mode)
 
-def train_model(env, model_name="ppo_model", total_timesteps=51200, render_game=False):
+def train_model(env, model_name="ppo_model", total_timesteps=5120000, render_game=False):
     # Load the existing model if it exists, otherwise create a new one
     if os.path.exists(model_name + ".zip"):
         print(f"Loading existing model from {model_name}.zip")
@@ -56,7 +56,7 @@ if __name__ == "__main__":
     # Set up command-line argument parsing
     parser = argparse.ArgumentParser(description="Train PPO model on a given environment")
     parser.add_argument('--env', type=str, default="Breakout-v4", help="Name of the environment (e.g., Breakout-v4)")
-    parser.add_argument('--timesteps', type=int, default=51200, help="Total timesteps for training")
+    parser.add_argument('--timesteps', type=int, default=5120000, help="Total timesteps for training")
     parser.add_argument('--render', action='store_true', help="Render the game during training")
     args = parser.parse_args()
 
